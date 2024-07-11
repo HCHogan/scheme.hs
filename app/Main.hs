@@ -1,8 +1,8 @@
 module Main where
 
-import qualified MyLib (someFunc)
+import System.Environment
 
 main :: IO ()
 main = do
-  putStrLn "Hello, Haskell!"
-  MyLib.someFunc
+  args <- getArgs
+  putStrLn $ "Hello, " ++ show args
