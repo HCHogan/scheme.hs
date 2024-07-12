@@ -94,6 +94,7 @@ executable scheme-hs
     -- Other library packages from which modules are imported.
     build-depends:
         base ^>=4.19.1.0,
+        parsec,
         scheme-hs
 
     -- Directories containing source files.
@@ -127,4 +128,7 @@ test-suite scheme-hs-test
     -- Test dependencies.
     build-depends:
         base ^>=4.19.1.0,
-        scheme-hs
+        scheme-hs,
+        parsec,
+        HUnit
+
